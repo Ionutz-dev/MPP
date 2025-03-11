@@ -8,14 +8,12 @@ public class Main {
         DatabaseInitializer.createTable();
         DatabaseInitializer.resetTable();
 
-        // Insert records
-        UserRepository.insertUser("Alice", "alice@example.com");
-        UserRepository.insertUser("Bob", "bob@example.com");
+        UserRepository.insertUser("Dorian", "dorian@popa.com");
+        UserRepository.insertUser("Michael", "michael@jordan.com");
+        UserRepository.insertUser("Tzanca", "tzanca@uraganu.com");
 
-        // Modify a record
-        UserRepository.updateUser(1, "alice@newdomain.com");
+        UserRepository.updateUser(1, "dorian@hatz.com");
 
-        // Print all users
         System.out.println("\nAll users in the database:");
         UserRepository.printUsers();
     }

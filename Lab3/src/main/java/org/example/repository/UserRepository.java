@@ -13,7 +13,7 @@ public class UserRepository {
             pstmt.setString(1, name);
             pstmt.setString(2, email);
             pstmt.executeUpdate();
-            System.out.println("User inserted successfully.");
+            System.out.println("User inserted successfully");
         } catch (SQLException e) {
             System.out.println("Insert failed: " + e.getMessage());
         }
@@ -27,7 +27,7 @@ public class UserRepository {
             pstmt.setString(1, newEmail);
             pstmt.setInt(2, id);
             pstmt.executeUpdate();
-            System.out.println("User updated successfully.");
+            System.out.println("User updated successfully");
         } catch (SQLException e) {
             System.out.println("Update failed: " + e.getMessage());
         }
